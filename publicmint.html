@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MEME AI - Public Mint</title>
+    <meta name="description" content="Meme AI is the seamless fusion of artificial intelligence and Meme coin culture. The project immerses players in a new world, where intelligent AI Bots not only provide a unique experience but also highlight the value of Meme coin. Explore the power of creativity and intelligent prediction within Meme AI, where art and technology come together.">
+    <link rel="icon" href="memeai.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEME AI - Public Mint">
+    <meta name="twitter:description" content="Meme AI is the seamless fusion of artificial intelligence and Meme coin culture. The project immerses players in a new world, where intelligent AI Bots not only provide a unique experience but also highlight the value of Meme coin. Explore the power of creativity and intelligent prediction within Meme AI, where art and technology come together.">
+    <meta name="twitter:image" content="mkmeme.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="publicmint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+    <link rel="stylesheet" type="text/css" href="https://voltichange.net/css/widget.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container" id="home">
+
+        <nav>
+          <a href="index.html" class="brand"><img src="memeai.png" width="50px" height="50px"> MEME AI</a>
+          <ul class="menu">
+            <li><a href="https://memeai-bsc.com/home">Home</a></li>
+            <li><a href="https://memeai-bsc.com/about">About</a></li>
+            <li><a href="https://memeai-bsc.com/tokenomics">Tokenomics</a></li>
+            <li><a href="https://memeai-bsc.com/faqs">FQA</a></li>
+            <li><a href="https://memeai-1.gitbook.io/meme-ai-whitepaper/">Whitepaper</a></li>
+          </ul>
+          <div class="buynow">
+            <img src="buynow.png" alt="buynow" />
+            <a href="https://www.pinksale.finance/launchpad/0x885e172a9e831A2997a73B84752b1f3e5eE13F27?chain=BSC" class="buy">Buy Now</a>
+          </div>
+          <button class="menu-btn">
+            <i class="fa fa-bars"></i>
+          </button>
+        </nav>
+
+        <div class="header-body">
+          <div>
+            <div class="babymusk">
+             <img id="memeai" src="mmai.gif" alt="memeai">
+              <img src="" alt="memeai" style="display:none"/>
+              <img src="200meme.png" alt="memeai" style="display:none"/>
+              <div class="leaders">
+                <h4 style="filter: drop-shadow(#000 2px 2px);">Public Mint <br>MEME AI</br></h4>
+                <div class="mintmeme">
+                  <h2>The fastest 50 individuals who send 1 BNB to the wallet address below will secure their participation slot in the MEME AI presale!</h2>
+                </div>
+                <h>The wallet address will be released soon.<i class="fa fa-clone" id="copyIcon" style="font-size:20px" aria-hidden="true"></i></h>
+                <h id="contentToCopy" class="copied" style="display: none;">The wallet address will be released soon.</h>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="memeai.js"></script>
+      <script>   
+      document.addEventListener('DOMContentLoaded', function () {
+      var contentToCopy = document.getElementById('contentToCopy');
+      var copyIcon = document.getElementById('copyIcon');
+
+      copyIcon.addEventListener('click', function () {
+          var tempTextArea = document.createElement('textarea');
+          tempTextArea.value = contentToCopy.textContent;
+
+          document.body.appendChild(tempTextArea);
+
+          tempTextArea.select();
+          tempTextArea.setSelectionRange(0, 99999);
+
+          document.execCommand('copy');
+
+          document.body.removeChild(tempTextArea);
+      });
+    });</script>
+  </body>
+</html>
