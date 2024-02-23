@@ -873,7 +873,11 @@ svg{
 		padding: 0 0.8em;
 	}
 }
-
+@media screen and (max-width: 500px){
+	.babymusk img {
+	    max-width: 60%;
+	}
+}
 
 
 
